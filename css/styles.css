@@ -1,0 +1,31 @@
+* {
+  border: 1px solid red;
+  margin: .02px;
+}
+a {
+  text-decoration: none;
+  color: #08C;
+}
+
+a.normal:hover {
+  text-decoration: underline;
+}
+
+ul > li {
+  list-style: none;
+  display: inline;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.your-verse {
+  border: 1px red solid;
+  background: url("imgs/your_verse_hero.jpg") 50% 100% no-repeat;
+}
+
+.promo_container {
+  display: flex;
+}
