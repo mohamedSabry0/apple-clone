@@ -1,10 +1,14 @@
 * {
-  border: 1px solid red;
-  margin: .02px;
+  margin: 0;
 }
 a {
   text-decoration: none;
   color: #08C;
+}
+
+main > a {
+  width: 100%;
+  display: flex;
 }
 
 a.normal:hover {
@@ -18,14 +22,32 @@ ul > li {
 
 .container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .your-verse {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   border: 1px red solid;
-  background: url("imgs/your_verse_hero.jpg") 50% 100% no-repeat;
+  background: url("../imgs/your_verse_hero.jpg") 50% 100% no-repeat;
 }
 
-.promo_container {
+
+
+.promo-container {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.promo-container > * {
+  flex: 1 1 320px; 
+}
+
+.promo-container img{
+  width: 100%;
+}
+
+footer p:nth-child(2), footer ul {
+  display: inline;
 }
