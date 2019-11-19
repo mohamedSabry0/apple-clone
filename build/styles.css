@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #08C;
+}
+
+.flex {
+  display: -webkit-box;
+  display: flex;
+}
+
+main > a {
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+}
+
+a.normal:hover {
+  text-decoration: underline;
+}
+
+ul a.normal {
+  border-left: 1px solid #ccc;
+  padding-left: 6px;
+}
+
+ul a.no-border {
+  border-left: none;
+}
+
+ul > li {
+  list-style: none;
+  display: inline;
+}
+
+.container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+.your-verse {
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+          justify-content: center;
+  background: url("../imgs/your_verse_hero.jpg") 50% 100% no-repeat;
+}
+
+
+.promo-container {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.promo-container > * {
+  -webkit-box-flex: 1;
+          flex: 1 1 320px; 
+}
+
+.promo-container img{
+  width: 100%;
+}
+
+footer p:nth-child(2), footer ul {
+  display: inline;
+}
+
+footer .flex div:first-child {
+  flex-basis: 640px;
+}
+
+footer .flex div:nth-child(2) {
+  flex-basis: 637px;
+}
+
+footer .flex {
+  justify-content: space-around;
+  font-size: 13px;
+  color: #ccc;
+}

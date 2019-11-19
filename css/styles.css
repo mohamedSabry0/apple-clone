@@ -1,9 +1,14 @@
 * {
   margin: 0;
+  padding: 0;
 }
 a {
   text-decoration: none;
   color: #08C;
+}
+
+.flex {
+  display: flex;
 }
 
 main > a {
@@ -15,24 +20,29 @@ a.normal:hover {
   text-decoration: underline;
 }
 
+ul a.normal {
+  border-left: 1px solid #ccc;
+  padding-left: 6px;
+}
+
+ul a.no-border {
+  border-left: none;
+}
+
 ul > li {
   list-style: none;
   display: inline;
 }
 
 .container {
-  display: flex;
   flex-direction: column;
 }
 
 .your-verse {
-  display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  border: 1px red solid;
   background: url("../imgs/your_verse_hero.jpg") 50% 100% no-repeat;
 }
-
 
 
 .promo-container {
@@ -50,4 +60,18 @@ ul > li {
 
 footer p:nth-child(2), footer ul {
   display: inline;
+}
+
+footer .flex div:first-child {
+  flex-basis: 640px;
+}
+
+footer .flex div:nth-child(2) {
+  flex-basis: 637px;
+}
+
+footer .flex {
+  justify-content: space-around;
+  font-size: 13px;
+  color: #888;
 }
