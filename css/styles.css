@@ -177,6 +177,10 @@ a[href$="#video-your-verse"] {
   font-size: 30px;
 }
 
+.none {
+  display: none;
+}
+
 .promo-container img {
   width: 100%;
 }
