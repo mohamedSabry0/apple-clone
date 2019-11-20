@@ -33,13 +33,13 @@ a {
   display: flex;
 }
 
-a.normal:hover {
-  text-decoration: underline;
-}
-
 ul a.normal {
   border-left: 1px solid #ccc;
   padding-left: 6px;
+}
+
+a.normal:hover {
+  text-decoration: underline;
 }
 
 ul a.no-border {
@@ -54,16 +54,16 @@ ul > li {
 .container {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  flex-direction: column;
+          flex-direction: column;
 }
 
 .your-verse {
   height: 540px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  align-items: center;
+          align-items: center;
   background: url("../imgs/your_verse_hero.jpg") 50% 100% no-repeat;
   background-size: cover;
   color: #fff;
@@ -73,7 +73,7 @@ nav {
   margin-top: 80px;
   background: -webkit-gradient(linear, left top, left bottom, from(#828181), color-stop(50%, #6b6b6b), color-stop(50%, #5f5f5f), to(#7b7b7b));
   background: linear-gradient(#828181, #6b6b6b 50%, #5f5f5f 50%, #7b7b7b);
-  min-width: 950px; 
+  min-width: 950px;
   height: 38px;
   border-radius: 5px;
   z-index: 4;
@@ -85,6 +85,16 @@ nav ul {
   height: 100%;
 }
 
+nav ul > li {
+  display: -webkit-box;
+  display: flex;
+  height: 100%;
+  -webkit-box-flex: 1;
+          flex: 1;
+  border-left: 1px solid #4040406b;
+  box-shadow: 1px 0 0 inset #9e9c9ca6, -1px 0 0 inset #9e9c9ca6;
+}
+
 nav ul > li:hover {
   background: #0005;
 }
@@ -93,23 +103,13 @@ nav ul > li:last-child:hover {
   background: #0000;
 }
 
-nav ul > li {
-  display: -webkit-box;
-  display: flex;
-  height: 100%;
-  -webkit-box-flex: 1;
-  flex: 1;
-  border-left: 1px solid #4040406b;
-  box-shadow: 1px 0 0 inset #9e9c9ca6, -1px 0 0 inset #9e9c9ca6;
-}
-
 nav a {
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
-  align-items: center;
+          align-items: center;
   -webkit-box-pack: center;
-  justify-content: center;
+          justify-content: center;
   position: absolute;
   top: 0;
   right: 0;
@@ -125,7 +125,7 @@ nav a span {
 }
 
 .logo {
-  border: none
+  border: none;
 }
 
 nav input {
@@ -154,9 +154,9 @@ img[src*="search"] {
   height: 50%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  align-items: center;
+          align-items: center;
   justify-content: space-around;
 }
 
@@ -189,10 +189,14 @@ a[href$="#video-your-verse"] {
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
-  align-items: center;
-  font-family: Assistant;
+          align-items: center;
+  font-family: Assistant, sans-serif;
   font-weight: 300;
   font-size: 30px;
+}
+
+.promo-container img {
+  width: 100%;
 }
 
 a[href$="#video-your-verse"] img {
@@ -208,11 +212,7 @@ a[href$="#video-your-verse"] img {
 
 .promo-container > * {
   -webkit-box-flex: 1;
-  flex: 1 1 320px; 
-}
-
-.promo-container img {
-  width: 100%;
+          flex: 1 1 320px;
 }
 
 footer {
@@ -232,12 +232,12 @@ footer .flex div:nth-child(2) {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
-  justify-content: center;
+          justify-content: center;
 }
 
 footer .flex {
   -webkit-box-pack: space-evenly;
-  justify-content: space-evenly;
+          justify-content: space-evenly;
   font-size: 10px;
   color: #6e6e6e;
 }
