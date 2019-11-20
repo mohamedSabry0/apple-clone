@@ -1,7 +1,28 @@
+@font-face {
+  font-family: Lucida;
+  src: url(../fonts/Lucida-Grande-Regular.woff);
+}
+
+@font-face {
+  font-family: Assistant;
+  src: url(../fonts/Assistant-ExtraLight.woff);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: Assistant;
+  src: url(../fonts/Assistant-Light.woff);
+  font-weight: 300;
+}
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  font-family: Lucida, sans-serif;
 }
+
 a {
   text-decoration: none;
   color: #08C;
@@ -11,17 +32,12 @@ a {
   display: flex;
 }
 
-main > a {
-  width: 100%;
-  display: flex;
-}
-
 a.normal:hover {
   text-decoration: underline;
 }
 
 ul a.normal {
-  border-left: 1px solid #ccc;
+  border-left: 1px solid #CCC;
   padding-left: 6px;
 }
 
@@ -39,11 +55,133 @@ ul > li {
 }
 
 .your-verse {
-  flex-wrap: wrap;
-  justify-content: center;
+  height: 540px;
+  flex-direction: column;
+  align-items: center;
   background: url("../imgs/your_verse_hero.jpg") 50% 100% no-repeat;
+  color: #FFFFFF;
 }
 
+nav {
+  margin-top: 80px;
+  background: linear-gradient(#828181, #6B6B6B 50%, #5F5F5F 50%, #7B7B7B);
+  min-width: 950px; 
+  height: 38px;
+  border-radius: 5px;
+  z-index: 4;
+}
+
+nav ul {
+  display: flex;
+  height: 100%;
+}
+
+nav ul > li:hover {
+  background: #00000055;
+}
+
+nav ul > li:last-child:hover {
+  background: #00000000;
+}
+
+nav ul > li {
+  display: flex;
+  height: 100%;
+  flex: 1;
+  border-left: 1px solid #4040406B;
+  box-shadow: 1px 0px 0 inset #9E9C9CA6, -1px 0 0 inset #9E9C9CA6;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 5;
+}
+
+nav a span {
+  font-size: 15px;
+  color: white;
+  text-shadow: 0px -0.8px 0px #00000087, 0px 0.5px 0px #464646;
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+}
+
+.logo {
+  border: none
+}
+
+nav input {
+  align-self: center;
+  width: 100px;
+  border-radius: 10px;
+  background: transparent;
+  border: none;
+  box-shadow: 0px 2px 2px 1px inset #333, 0 -14px 0px -13px #999 inset;
+  background-color: #9E9E9E82;
+  margin: 10px;
+  height: 20px;
+}
+
+img[src*="search"] {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 13px;
+  left: 13px;
+  z-index: 10;
+}
+
+.your-verse main {
+  margin-top: 30px;
+  height: 50%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.your-verse a[href$="your-verse/"] {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.title {
+  font-size: 70px;
+  font-family: Assistant;
+  font-weight: 200;
+}
+
+.subtitle {
+  text-align: center;
+  width: 900px;
+  font-size: 35px;
+  font-family: Assistant;
+  font-weight: 300;
+}
+
+a[href$="#video-your-verse"] {
+  color: white;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  font-family: Assistant;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+a[href$="#video-your-verse"] img {
+  width: 40px;
+  padding-left: 10px;
+}
 
 .promo-container {
   display: flex;
@@ -58,20 +196,26 @@ ul > li {
   width: 100%;
 }
 
+footer {
+
+  margin: 20px;
+}
+
 footer p:nth-child(2), footer ul {
   display: inline;
 }
 
 footer .flex div:first-child {
-  flex-basis: 640px;
+  line-height: 25px;
 }
 
 footer .flex div:nth-child(2) {
-  flex-basis: 637px;
+  display: flex;
+  justify-content: center;
 }
 
 footer .flex {
-  justify-content: space-around;
-  font-size: 13px;
-  color: #888;
+  justify-content: space-evenly;
+  font-size: 10px;
+  color: #6E6E6E;
 }
