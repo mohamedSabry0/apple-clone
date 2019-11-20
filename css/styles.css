@@ -59,6 +59,7 @@ ul > li {
   flex-direction: column;
   align-items: center;
   background: url("../imgs/your_verse_hero.jpg") 50% 100% no-repeat;
+  background-size: cover;
   color: #FFFFFF;
 }
 
@@ -108,8 +109,6 @@ nav a span {
   font-size: 15px;
   color: white;
   text-shadow: 0px -0.8px 0px #00000087, 0px 0.5px 0px #464646;
-  -webkit-background-clip: text;
-     -moz-background-clip: text;
 }
 
 .logo {
@@ -192,7 +191,7 @@ a[href$="#video-your-verse"] img {
   flex: 1 1 320px; 
 }
 
-.promo-container img{
+.promo-container img {
   width: 100%;
 }
 
