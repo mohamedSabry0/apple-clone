@@ -54,19 +54,19 @@ ul > li {
 .container {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .your-verse {
   height: 540px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-          flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
   background: url("../imgs/your_verse_hero.jpg") 50% 100% no-repeat;
   background-size: cover;
-  color: #ffffff;
+  color: #fff;
 }
 
 nav {
@@ -86,11 +86,11 @@ nav ul {
 }
 
 nav ul > li:hover {
-  background: #00000055;
+  background: #0005;
 }
 
 nav ul > li:last-child:hover {
-  background: #00000000;
+  background: #0000;
 }
 
 nav ul > li {
@@ -98,18 +98,18 @@ nav ul > li {
   display: flex;
   height: 100%;
   -webkit-box-flex: 1;
-          flex: 1;
+  flex: 1;
   border-left: 1px solid #4040406b;
-  box-shadow: 1px 0px 0 inset #9e9c9ca6, -1px 0 0 inset #9e9c9ca6;
+  box-shadow: 1px 0 0 inset #9e9c9ca6, -1px 0 0 inset #9e9c9ca6;
 }
 
 nav a {
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
   -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
   position: absolute;
   top: 0;
   right: 0;
@@ -121,7 +121,7 @@ nav a {
 nav a span {
   font-size: 15px;
   color: white;
-  text-shadow: 0px -0.8px 0px #00000087, 0px 0.5px 0px #464646;
+  text-shadow: 0 -0.8px 0 #00000087, 0 0.5px 0 #464646;
 }
 
 .logo {
@@ -134,7 +134,7 @@ nav input {
   border-radius: 10px;
   background: transparent;
   border: none;
-  box-shadow: 0px 2px 2px 1px inset #333, 0 -14px 0px -13px #999 inset;
+  box-shadow: 0 2px 2px 1px inset #333, 0 -14px 0 -13px #999 inset;
   background-color: #9e9e9e82;
   margin: 10px;
   height: 20px;
@@ -154,9 +154,9 @@ img[src*="search"] {
   height: 50%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-          flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
   justify-content: space-around;
 }
 
@@ -171,7 +171,7 @@ img[src*="search"] {
 
 .title {
   font-size: 70px;
-  font-family: Assistant;
+  font-family: Assistant, sans-serif;
   font-weight: 200;
 }
 
@@ -179,7 +179,7 @@ img[src*="search"] {
   text-align: center;
   width: 900px;
   font-size: 35px;
-  font-family: Assistant;
+  font-family: Assistant, sans-serif;
   font-weight: 300;
 }
 
@@ -189,7 +189,7 @@ a[href$="#video-your-verse"] {
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
   font-family: Assistant;
   font-weight: 300;
   font-size: 30px;
@@ -208,7 +208,7 @@ a[href$="#video-your-verse"] img {
 
 .promo-container > * {
   -webkit-box-flex: 1;
-          flex: 1 1 320px; 
+  flex: 1 1 320px; 
 }
 
 .promo-container img {
@@ -219,7 +219,8 @@ footer {
   margin: 20px;
 }
 
-footer p:nth-child(2), footer ul {
+footer p:nth-child(2),
+footer ul {
   display: inline;
 }
 
@@ -231,12 +232,12 @@ footer .flex div:nth-child(2) {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 footer .flex {
   -webkit-box-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
   font-size: 10px;
   color: #6e6e6e;
 }
