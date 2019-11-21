@@ -19,7 +19,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/mohamedSabry0/apple-clone">
-    <img src="images/nav_logo.png" alt="Logo" width="200">
+    <img src="imgs/nav_logo.png" alt="Logo" width="200">
 
   </a>
 
